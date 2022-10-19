@@ -44,9 +44,9 @@ spring:
     loadbalancer.ribbon.enabled: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://<MySQL DB FQDN/IP>/<DB name>?createDatabaseIfNotExist=true
-    username: <DB username>
-    password: <DB password>
+    url: jdbc:mysql://<MySQL DB sv2db/10.0.2.15>/<test>?createDatabaseIfNotExist=true
+    username: <test>
+    password: <1i0keQHx66^>
   jpa:
     hibernate:
       ddl-auto: create
@@ -54,10 +54,10 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
   rabbitmq:
-    host: <RabbitMQ FQDN/IP>
-    port: 5672
-    username: <RabbitMQ username>
-    password: <RabbitMQ password>
+    host: <10.0.2.15>
+    port: 15672
+    username: <rabbit>
+    password: <passw0rd>
     virtualHost: /
 
 logstash:
